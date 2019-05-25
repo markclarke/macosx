@@ -133,7 +133,7 @@ echo ""
 
 CASKPACKAGES=(
     adobe-creative-cloud
-    avast
+    avast-security
     docker
     dropbox
     firefox
@@ -171,7 +171,7 @@ done
 
 
 ###############################################################################
-# Install Zsh                                                     #
+# Install Zsh                                                                 #
 ###############################################################################
 
 # I like using Zsh with iTerm ...
