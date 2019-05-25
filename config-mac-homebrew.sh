@@ -196,6 +196,31 @@ else
 
 fi
 
+###############################################################################
+# Install Avast Antivirus (Free)                                              #
+###############################################################################
+
+# Check if Avast is installed, if installed - skip, otherwise install
+
+echo ""
+echo "Checking if Avast Antivirus (Free) is installed ... "
+
+if brew cask list --versions avast-security > /dev/null; then
+
+  # Avast is installed
+
+  echo ""
+  echo "Avast Antivirus is installed. Skipping ... "
+
+else
+
+  # Avast is not installed - install it 
+
+  brew cask install avast-security
+
+fi
+
+
 
 ###############################################################################
 # Update brew packages                                                        #
