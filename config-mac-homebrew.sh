@@ -144,6 +144,7 @@ CASKPACKAGES=(
     teamviewer
     visual-studio-code
     whatsapp
+    yed
 )
 
 # Rotate through the casks, if installed - skip, otherwise install
