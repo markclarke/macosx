@@ -115,7 +115,7 @@ for brewpackage in "${BREWPACKAGES[@]}"; do
         echo "Installing ..."
         echo ""
     
-        brew install "$brewpackage"
+        brew install $brewpackage
 
     fi
 
@@ -162,7 +162,7 @@ for caskpackage in "${CASKPACKAGES[@]}"; do
         echo "Installing ..."
         echo ""
     
-        brew cask install "$caskpackage"
+        brew cask install $caskpackage
 
     fi
 
