@@ -133,6 +133,7 @@ echo ""
 
 CASKPACKAGES=(
     adobe-creative-cloud
+    avast
     docker
     dropbox
     firefox
