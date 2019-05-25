@@ -153,8 +153,8 @@ for caskpackage in "${CASKPACKAGES[@]}"; do
 
     if brew cask list $caskpackage; then 
 
-        echo ""
         echo "$caskpackage is already installed. Skipping ..."
+        echo ""
 
     else 
 
