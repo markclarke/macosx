@@ -102,12 +102,12 @@ BREWPACKAGES=(
 
 # Rotate through the packages, if installed - skip, otherwise install
 
-for package in "${BREWPACKAGES[@]}"; do
+for brewpackage in "${BREWPACKAGES[@]}"; do
 
-    if brew list $package; then 
+    if brew list $brewpackage; then 
 
         echo ""
-        echo "$package is already installed. Skipping ..."
+        echo "$brewpackage is already installed. Skipping ..."
 
     else 
 
@@ -115,7 +115,7 @@ for package in "${BREWPACKAGES[@]}"; do
         echo "Installing ..."
         echo ""
     
-        brew install "$package"
+        brew install "$brewpackage"
 
     fi
 
@@ -131,7 +131,7 @@ echo ""
 echo "Checking cask packages ... "
 echo ""
 
-BREWCASKPACKAGES=(
+CASKPACKAGES=(
     adobe-creative-cloud
     docker
     dropbox
@@ -148,7 +148,7 @@ BREWCASKPACKAGES=(
 
 # Rotate through the casks, if installed - skip, otherwise install
 
-for caskpackage in "${BREWCASKPACKAGES[@]}"; do
+for caskpackage in "${CASKPACKAGES[@]}"; do
 
     if brew cask list $caskpackage; then 
 
