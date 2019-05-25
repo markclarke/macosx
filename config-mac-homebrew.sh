@@ -133,7 +133,6 @@ echo ""
 
 CASKPACKAGES=(
     adobe-creative-cloud
-    avast-security
     docker
     dropbox
     firefox
@@ -183,16 +182,19 @@ echo "Checking if Zsh is installed ... "
 
 if brew ls --versions zsh > /dev/null; then
 
-  # Zsh is installed
+    # Zsh is installed
 
-  echo ""
-  echo "Zsh is installed. Skipping ... "
+    echo ""
+    echo "Zsh is installed. Skipping ... "
 
 else
 
   # Zsh is not installed - install it 
 
-  brew install zsh
+    echo ""
+    echo "Installing ... "
+
+    brew install zsh
 
 fi
 
@@ -209,14 +211,17 @@ if brew cask list --versions avast-security > /dev/null; then
 
   # Avast is installed
 
-  echo ""
-  echo "Avast Antivirus is installed. Skipping ... "
+    echo ""
+    echo "Avast Antivirus is installed. Skipping ... "
 
 else
 
   # Avast is not installed - install it 
 
-  brew cask install avast-security
+    echo ""
+    echo "Installing ... "
+
+    brew cask install avast-security
 
 fi
 
