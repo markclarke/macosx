@@ -1,3 +1,7 @@
+###############################################################################
+# Essential git aliases & config                                              #
+###############################################################################
+
 git config --global user.name "Mark Clarke"
 git config --global user.email mark.clarke@outlook.com
 git config --global alias.co checkout
