@@ -106,6 +106,7 @@ for package in "${BREWPACKAGES[@]}"; do
 
     if brew list $package; then 
 
+        echo ""
         echo "$package is already installed. Skipping ..."
 
     else 
@@ -151,6 +152,7 @@ for caskpackage in "${BREWCASKPACKAGES[@]}"; do
 
     if brew cask list $caskpackage; then 
 
+        echo ""
         echo "$caskpackage is already installed. Skipping ..."
 
     else 
@@ -164,6 +166,33 @@ for caskpackage in "${BREWCASKPACKAGES[@]}"; do
     fi
 
 done 
+
+
+###############################################################################
+# Install Zsh                                                     #
+###############################################################################
+
+# I like using Zsh with iTerm ...
+
+# Check if Zsh is installed, if installed - skip, otherwise install
+
+echo ""
+echo "Checking if Zsh is installed ... "
+
+if brew ls --versions zsh > /dev/null; then
+
+  # Zsh is installed
+
+  echo ""
+  echo "Zsh is installed. Skipping ... "
+
+else
+
+  # Zsh is not installed - install it 
+
+  brew install zsh
+
+fi
 
 
 ###############################################################################
