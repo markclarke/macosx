@@ -58,6 +58,7 @@ After running config-mac-homebrew.sh you can update the software (packages) runn
 $ brew upgrade
 $ brew cask upgrade
 ```
+----
 
 # Disclaimer
 
@@ -66,7 +67,6 @@ $ brew cask upgrade
 
 
 # License
-----
 
 MIT
 
