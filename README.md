@@ -50,6 +50,15 @@ $ chmod a+x config-mac-system.sh
 $ chmod a+x config-mac-homebrew.sh
 ```
 
+# Updating software
+
+After running config-mac-homebrew.sh you can update the software (packages) running on your Mac:
+
+```sh
+$ brew upgrade
+$ brew cask upgrade
+```
+
 # Disclaimer
 
 **USE AT YOUR OWN RISK!!!**
