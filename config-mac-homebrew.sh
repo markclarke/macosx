@@ -141,6 +141,7 @@ CASKPACKAGES=(
     lastpass
     microsoft-office
     skype
+    slack
     teamviewer
     visual-studio-code
     whatsapp
