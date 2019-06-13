@@ -18,6 +18,7 @@ I recommend you run the files in the following order:
 
   - config-mac-system
   - config-mac-homebrew
+  - config-mac-aliases
 
 ### Installation method
 
