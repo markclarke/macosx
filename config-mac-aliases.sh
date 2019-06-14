@@ -66,6 +66,7 @@ echo ""
 
 git config --global alias.br branch
 git config --global alias.co checkout
+git config --global alias.cob "checkout -b"
 git config --global alias.com "commit -m"
 git config --global alias.pushoh "push origin HEAD"
 git config --global alias.pushom "push origin master"
