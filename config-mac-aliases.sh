@@ -4,7 +4,7 @@
 
 clear
 
-# Set elapsed time counter to zero 
+# Set elapsed time counter to zero
 
 SECONDS=0
 
@@ -18,9 +18,9 @@ check-git() {
 
     echo ""
     echo "Checking if git installed"
-	
-	if [[ $(command -v git) == "" ]]; then 
-		
+
+	if [[ $(command -v git) == "" ]]; then
+
 		echo ""
 		echo "Git not installed - installing ... "
 		echo ""
@@ -32,12 +32,12 @@ check-git() {
 		echo ""
 		echo "Git installed ... "
 		echo ""
-     
+
 	fi
 }
 
 
-# Run alaises function 
+# Run alaises function
 
 check-git
 
@@ -46,7 +46,7 @@ check-git
 # Configure git aliases                                                       #
 ###############################################################################
 
-# Create permanent git alias, which lists all configured git aliases 
+# Create permanent git alias, which lists all configured git aliases
 
 git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 
@@ -93,7 +93,7 @@ if brew ls --versions zsh > /dev/null; then
 
 else
 
-  # Zsh is not installed - install it 
+  # Zsh is not installed - install it
 
     echo ""
     echo "Installing ... "
@@ -119,6 +119,7 @@ echo "Configuring zsh aliases ... "
 
 echo 'alias tf="terraform"' >> ~/.zshrc              # sets tf to terraform
 echo 'alias repos="~/Documents/repos"' >> ~/.zshrc   # shortcut to my repos directory (change the path if different)
+echo 'alias ssh="~/Documents/ssh"' >> ~/.zshrc       # shortcut to my ssh directory (change the path if different)
 
 echo ""
 echo "Restart zsh shell to use the aliases! "
