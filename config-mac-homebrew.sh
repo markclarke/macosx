@@ -72,6 +72,7 @@ BREWPACKAGES=(
     gettext
     git
     gmp
+    gnupg
     gnutls
     htop
     libevent
@@ -95,6 +96,7 @@ BREWPACKAGES=(
     sqlite
     terraform
     unbound
+    unrar
     vim
     wget
     zsh
