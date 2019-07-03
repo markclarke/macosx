@@ -98,6 +98,7 @@ BREWPACKAGES=(
     unbound
     unrar
     vim
+    warrensbox/tap/tfswitch
     wget
     zsh
 )
