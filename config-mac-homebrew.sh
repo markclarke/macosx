@@ -146,7 +146,6 @@ CASKPACKAGES=(
     skype
     slack
     teamviewer
-    veracrypt
     visual-studio-code
     whatsapp
     yed
