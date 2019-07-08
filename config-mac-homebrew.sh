@@ -4,7 +4,7 @@
 
 clear
 
-# Set elapsed time counter to zero 
+# Set elapsed time counter to zero
 
 SECONDS=0
 
@@ -15,9 +15,9 @@ SECONDS=0
 # Check if Homebrew is installed, if we don't have it - install it, if we do have it - update it
 
 homebrew() {
-	
-	if [[ $(command -v brew) == "" ]]; then 
-		
+
+	if [[ $(command -v brew) == "" ]]; then
+
 		echo ""
 		echo "Installing Xcode ... "
 		echo ""
@@ -37,12 +37,12 @@ homebrew() {
 		echo ""
 
 		brew update
-        
+
 	fi
 }
 
 
-# Run homebrew function 
+# Run homebrew function
 
 homebrew
 
@@ -59,7 +59,7 @@ echo ""
 echo "Checking brew packages ... "
 echo ""
 
-# List the brew packages you want to install 
+# List the brew packages you want to install
 
 BREWPACKAGES=(
     ansible
@@ -107,22 +107,22 @@ BREWPACKAGES=(
 
 for brewpackage in "${BREWPACKAGES[@]}"; do
 
-    if brew list $brewpackage; then 
+    if brew list $brewpackage; then
 
         echo ""
         echo "$brewpackage is already installed. Skipping ..."
 
-    else 
+    else
 
         echo ""
         echo "Installing ..."
         echo ""
-    
+
         brew install $brewpackage
 
     fi
 
-done 
+done
 
 
 
@@ -155,22 +155,22 @@ CASKPACKAGES=(
 
 for caskpackage in "${CASKPACKAGES[@]}"; do
 
-    if brew cask list $caskpackage; then 
+    if brew cask list $caskpackage; then
 
         echo "$caskpackage is already installed. Skipping ..."
         echo ""
 
-    else 
+    else
 
         echo ""
         echo "Installing ..."
         echo ""
-    
+
         brew cask install $caskpackage
 
     fi
 
-done 
+done
 
 
 ###############################################################################
@@ -193,12 +193,25 @@ if brew ls --versions zsh > /dev/null; then
 
 else
 
-  # Zsh is not installed - install it 
+  # Zsh is not installed - install it
 
     echo ""
     echo "Installing ... "
 
     brew install zsh
+
+  # Make Zsh the system default shell
+
+    echo ""
+    echo "Making Zsh the system default shell ..."
+
+    chsh -s $(which zsh)
+
+    echo ""
+    echo "Verifying that Zsh is default - expected result '/bin/zsh'"
+    echo ""
+
+    echo $SHELL
 
 fi
 
@@ -220,7 +233,7 @@ if brew cask list --versions avast-security > /dev/null; then
 
 else
 
-  # Avast is not installed - install it 
+  # Avast is not installed - install it
 
     echo ""
     echo "Installing ... "
