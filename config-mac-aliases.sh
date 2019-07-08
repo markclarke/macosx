@@ -119,7 +119,6 @@ echo "Configuring zsh aliases ... "
 
 echo 'alias tf="terraform"' >> ~/.zshrc              # sets tf to terraform
 echo 'alias repos="~/Documents/repos"' >> ~/.zshrc   # shortcut to my repos directory (change the path if different)
-echo 'alias ssh="~/Documents/ssh"' >> ~/.zshrc       # shortcut to my ssh directory (change the path if different)
 
 echo ""
 echo "Restart zsh shell to use the aliases! "
