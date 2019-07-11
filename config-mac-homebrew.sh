@@ -92,6 +92,7 @@ BREWPACKAGES=(
     pkg-config
     putty
     python
+    python@2
     readline
     sqlite
     terraform
