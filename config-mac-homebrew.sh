@@ -138,6 +138,7 @@ echo ""
 CASKPACKAGES=(
     adobe-creative-cloud
     docker
+    dotnet-sdk
     dropbox
     firefox
     google-chrome
