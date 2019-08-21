@@ -141,6 +141,7 @@ CASKPACKAGES=(
     dotnet-sdk
     dropbox
     firefox
+    fork
     google-chrome
     iterm2
     lastpass
