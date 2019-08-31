@@ -140,6 +140,7 @@ CASKPACKAGES=(
     docker
     dotnet-sdk
     dropbox
+    filezilla
     firefox
     fork
     google-chrome
