@@ -71,6 +71,7 @@ git config --global alias.com "commit -m"
 git config --global alias.pushoh "push origin HEAD"
 git config --global alias.pushom "push origin master"
 git config --global alias.st status
+git config --global alias.mt mergetool
 
 
 ###############################################################################
