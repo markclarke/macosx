@@ -95,7 +95,6 @@ BREWPACKAGES=(
     python@2
     readline
     sqlite
-    xcode-select --install
     warrensbox/tap/tfswitch
     unbound
     unrar
