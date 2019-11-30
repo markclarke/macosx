@@ -50,13 +50,25 @@ check-git
 
 git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 
-# Configure your git global username and email
+
+###############################################################################
+# Essential git aliases (for me)                                              #
+###############################################################################
 
 
-# --- Remember to change this and add your own details!! --- #
+# --- Remember to change these and add your own details!! --- #
 
 git config --global user.name "Mark Clarke"
-git config --global user.email mark.clarke@reedonline.co.uk
+git config --global user.email mark.clarke@outlook.com
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.st status
+git config --global alias.cob "checkout -b"
+git config --global alias.com "commit -m"
+git config --global alias.pushoh "push origin HEAD"
+git config --global alias.pushom "push origin master"
+git config --list
+
 
 echo ""
 echo "Configuring git aliases ... "
@@ -71,6 +83,7 @@ git config --global alias.com "commit -m"
 git config --global alias.pushoh "push origin HEAD"
 git config --global alias.pushom "push origin master"
 git config --global alias.st status
+
 
 
 ###############################################################################
