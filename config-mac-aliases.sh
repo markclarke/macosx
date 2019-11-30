@@ -113,15 +113,15 @@ fi
 echo ""
 echo "Configuring zsh aliases ... "
 
-# I'm not checking if the alias is already used. If used, it will be overwritten!!
+# I'm not checking if the alias is already used. If used, it will be overwritten!
 # Aliases are appended to the bottom of the .zshrc file by using >>
-# Do not use single > as this overwrites the contents of .zshrc!!
+# Do not use single > as this overwrites the contents of .zshrc!
 
 echo 'alias tf="terraform"' >> ~/.zshrc              # sets tf to terraform
 echo 'alias repos="~/Documents/repos"' >> ~/.zshrc   # shortcut to my repos directory (change the path if different)
-
+echo 'alias desk="~/Desktop"' >> ~/.zshrc            # shortcut to my Desktop
 echo ""
-echo "Restart zsh shell to use the aliases! "
+echo "Restart zsh shell to use the aliases"
 
 # -------- Finish -------- #
 
