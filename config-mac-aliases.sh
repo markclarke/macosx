@@ -52,7 +52,7 @@ git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^
 
 
 ###############################################################################
-# Essential git aliases (for me)                                              #
+# Essential git aliases                                                       #
 ###############################################################################
 
 
@@ -60,6 +60,18 @@ git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^
 
 git config --global user.name "Mark Clarke"
 git config --global user.email mark.clarke@outlook.com
+
+
+# ----------------------------------------------------------- #
+
+
+echo ""
+echo "Configuring git aliases ... "
+echo ""
+
+# List of the git aliases which will be installed. 
+# If needed, you can change the alias to something that's more obvious & memorable
+
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.st status
@@ -68,21 +80,6 @@ git config --global alias.com "commit -m"
 git config --global alias.pushoh "push origin HEAD"
 git config --global alias.pushom "push origin master"
 git config --list
-
-
-echo ""
-echo "Configuring git aliases ... "
-echo ""
-
-# List the git aliases you want to install. If needed, you can change the alias to something that's more obvious & memorable
-
-git config --global alias.br branch
-git config --global alias.co checkout
-git config --global alias.cob "checkout -b"
-git config --global alias.com "commit -m"
-git config --global alias.pushoh "push origin HEAD"
-git config --global alias.pushom "push origin master"
-git config --global alias.st status
 
 
 
