@@ -1,10 +1,10 @@
 # Mac configuration
 
-I've reformatted, configured and installed programmes too many times and it's now a complete pain in the ass. I've based my configuration file on the excellent macos github repo by [Mitchell Cass](https://github.com/mathiasbynens/dotfiles/blob/master/.macos), so I can't take any credit for this. I've simplified it and stripped out the configuration I don't use. 
+I've reformatted, configured and installed programmes too many times and it's a complete pain in the ass. I've based my configuration file on the excellent macos github repo by [Mitchell Cass](https://github.com/mathiasbynens/dotfiles/blob/master/.macos), so I can't take any credit for this. I've simplified it and stripped out configuration I don't use. 
 
-I've listed the software I like to install in the BREWPACKAGES and CASKPACKAGES. However, it's likely you'll want to customise these to suit your needs.
+I've listed the software I like to install in BREWPACKAGES and CASKPACKAGES. However, it's likely you'll want to customise these to suit your needs, so feel free to add to them.
 
-> I hope these scripts are useful and save you a lot of time and effort!
+> I hope these scripts are useful and saves you time and effort!
 
 
 ### Modification & Improvements
