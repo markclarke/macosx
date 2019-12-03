@@ -50,28 +50,42 @@ check-git
 
 git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 
-# Configure your git global username and email
+
+###############################################################################
+# Essential git aliases                                                       #
+###############################################################################
 
 
-# --- Remember to change this and add your own details!! --- #
+# --- Remember to change these and add your own details!! --- #
 
 git config --global user.name "Mark Clarke"
-git config --global user.email mark.clarke@reedonline.co.uk
+git config --global user.email mark.clarke@outlook.com
+
+
+# ----------------------------------------------------------- #
+
 
 echo ""
 echo "Configuring git aliases ... "
 echo ""
 
-# List the git aliases you want to install. If needed, you can change the alias to something that's more obvious & memorable
+# List of the git aliases which will be installed. 
+# If needed, you can change the alias to something that's more obvious & memorable
 
-git config --global alias.br branch
 git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.st status
 git config --global alias.cob "checkout -b"
 git config --global alias.com "commit -m"
 git config --global alias.pushoh "push origin HEAD"
 git config --global alias.pushom "push origin master"
+<<<<<<< HEAD
 git config --global alias.st status
 git config --global alias.mt mergetool
+=======
+git config --list
+
+>>>>>>> 57becd30cf004895d66754f00c104ccfb7ea03e6
 
 
 ###############################################################################
@@ -114,15 +128,15 @@ fi
 echo ""
 echo "Configuring zsh aliases ... "
 
-# I'm not checking if the alias is already used. If used, it will be overwritten!!
+# I'm not checking if the alias is already used. If used, it will be overwritten!
 # Aliases are appended to the bottom of the .zshrc file by using >>
-# Do not use single > as this overwrites the contents of .zshrc!!
+# Do not use single > as this overwrites the contents of .zshrc!
 
 echo 'alias tf="terraform"' >> ~/.zshrc              # sets tf to terraform
 echo 'alias repos="~/Documents/repos"' >> ~/.zshrc   # shortcut to my repos directory (change the path if different)
-
+echo 'alias desk="~/Desktop"' >> ~/.zshrc            # shortcut to my Desktop
 echo ""
-echo "Restart zsh shell to use the aliases! "
+echo "Restart zsh shell to use the aliases"
 
 # -------- Finish -------- #
 

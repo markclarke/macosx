@@ -95,11 +95,10 @@ BREWPACKAGES=(
     python@2
     readline
     sqlite
-    terraform
+    warrensbox/tap/tfswitch
     unbound
     unrar
     vim
-    warrensbox/tap/tfswitch
     wget
     zsh
 )
