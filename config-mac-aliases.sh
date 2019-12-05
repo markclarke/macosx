@@ -69,7 +69,7 @@ echo ""
 echo "Configuring git aliases ... "
 echo ""
 
-# List of the git aliases which will be installed. 
+# List of the git aliases which will be installed.
 # If needed, you can change the alias to something that's more obvious & memorable
 
 git config --global alias.co checkout
@@ -79,13 +79,10 @@ git config --global alias.cob "checkout -b"
 git config --global alias.com "commit -m"
 git config --global alias.pushoh "push origin HEAD"
 git config --global alias.pushom "push origin master"
-<<<<<<< HEAD
-git config --global alias.st status
-git config --global alias.mt mergetool
-=======
+git config --global alias.cache "rm --cached -r ."
+git config --global alias.reset "reset --hard"
 git config --list
 
->>>>>>> 57becd30cf004895d66754f00c104ccfb7ea03e6
 
 
 ###############################################################################
