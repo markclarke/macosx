@@ -129,9 +129,10 @@ echo "Configuring zsh aliases ... "
 # Aliases are appended to the bottom of the .zshrc file by using >>
 # Do not use single > as this overwrites the contents of .zshrc!
 
-echo 'alias tf="terraform"' >> ~/.zshrc              # sets tf to terraform
+echo 'alias desk="~/Desktop"' >> ~/.zshrc            # shortcut to desktop
+echo 'alias kube="kubernetes"' >> ~/.zshrc           # sets kube to kubernetes
 echo 'alias repos="~/Documents/repos"' >> ~/.zshrc   # shortcut to my repos directory (change the path if different)
-echo 'alias desk="~/Desktop"' >> ~/.zshrc            # shortcut to my Desktop
+echo 'alias tf="terraform"' >> ~/.zshrc              # sets tf to terraform
 echo ""
 echo "Restart zsh shell to use the aliases"
 
