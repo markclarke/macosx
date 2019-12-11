@@ -2,11 +2,11 @@
 
 # Original Github source: https://mths.be/macos
 
-# Clear the screen when the code starts
+# Clear the screen
 
 clear
 
-# Set elapsed time counter to zero 
+# Set elapsed time counter to zero
 
 SECONDS=0
 
