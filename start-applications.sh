@@ -11,6 +11,8 @@ open -a "Google Chrome.app"
 open -a "Firefox.app"
 
 # Launch Applications
+open -a "Discord.app"
+open -a "Outlook.app"
 open -a "Slack.app"
 open -a "Visual Studio Code.app"
 
