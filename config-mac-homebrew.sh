@@ -94,6 +94,7 @@ BREWPACKAGES=(
     python
     python@2
     readline
+    speedtest-cli
     sqlite
     warrensbox/tap/tfswitch
     unbound
@@ -143,6 +144,8 @@ CASKPACKAGES=(
     fork
     google-chrome
     iterm2
+    kubectl
+    kubectx
     lastpass
     microsoft-office
     skype
