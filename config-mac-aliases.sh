@@ -130,9 +130,10 @@ echo "Configuring zsh aliases ... "
 # Do not use single > as this overwrites the contents of .zshrc!
 
 echo 'alias desk="~/Desktop"' >> ~/.zshrc            # shortcut to desktop
-echo 'alias kube="kubernetes"' >> ~/.zshrc           # sets kube to kubernetes
-echo 'alias repos="~/Documents/repos"' >> ~/.zshrc   # shortcut to my repos directory (change the path if different)
-echo 'alias tf="terraform"' >> ~/.zshrc              # sets tf to terraform
+echo 'alias k="kubernetes"' >> ~/.zshrc              
+echo 'alias repos="~/Documents/repos"' >> ~/.zshrc   # shortcut to my repos directory (change the path if different)            
+echo 'alias speed="speedtest-cli"' >> ~/.zshrc   
+echo 'alias tf="terraform"' >> ~/.zshrc      
 echo ""
 echo "Restart zsh shell to use the aliases"
 
